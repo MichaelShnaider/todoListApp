@@ -1,5 +1,5 @@
 var newTodo;
-$("input").slideToggle(0001);
+
 
 
 $("input").on("keypress",function(event){
@@ -9,6 +9,14 @@ $("input").on("keypress",function(event){
 		$(this).val("");
 	}
 
+});
+
+
+	
+
+
+$("input").on("mouseenter",function(event){
+	$(this).focus();
 });
 
 $("ul").on("click","li",function(){
