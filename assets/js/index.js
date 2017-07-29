@@ -7,6 +7,10 @@ $("input").on("keypress",function(event){
 		newTodo = $(this).val();
 		$("ul").append("<li><span class='deleteButton'><i class='fa fa-trash'></i></span>"+newTodo+"</li>");
 		$(this).val("");
+		init();
+		
+		/*var h = document.querySelector(".container").style.marginBottom;
+		document.querySelector(".container").style.marginBottom = "40px";*/
 	}
 
 });
@@ -26,8 +30,10 @@ $("ul").on("click","li",function(){
 $("ul").on("click",".deleteButton",function(event){
 	$(this).parent().slideUp(100,function(){
 		$(this).remove();
+		init();
 	});
 		event.stopPropagation();
+
 }); 
 
 $(".fa-plus").on("click",function(){

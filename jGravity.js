@@ -1368,7 +1368,7 @@ function onDocumentMouseMove( event ) {
 
 function onDocumentKeyUp( event ) {
 
-	if ( event.keyCode == 13 ) search();
+	if ( event.keyCode == 14 ) search();
 
 }
 
@@ -1774,7 +1774,9 @@ function getElementProperties( element ) {
 
 	} while ( element = element.offsetParent );
 
+
 	return [ x, y, width, height ];
+
 }
 
 function getBrowserDimensions() {
@@ -1839,5 +1841,4 @@ function getBrowserDimensions() {
 
 		resultBodies.push( bodies[i] = createBox( world, properties[i][0] + ( properties[i][2] >> 1 ), properties[i][1] + ( properties[i][3] >> 1 ), properties[i][2] / 2, properties[i][3] / 2, false, element ) );
 	}
-})
-*/
+})*/
